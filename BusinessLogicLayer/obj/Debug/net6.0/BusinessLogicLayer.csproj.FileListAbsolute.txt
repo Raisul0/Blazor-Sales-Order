@@ -1,0 +1,17 @@
+D:\Projects\Blazor Sales Order\BusinessLogicLayer\bin\Debug\net6.0\BusinessLogicLayer.deps.json
+D:\Projects\Blazor Sales Order\BusinessLogicLayer\bin\Debug\net6.0\BusinessLogicLayer.dll
+D:\Projects\Blazor Sales Order\BusinessLogicLayer\bin\Debug\net6.0\BusinessLogicLayer.pdb
+D:\Projects\Blazor Sales Order\BusinessLogicLayer\bin\Debug\net6.0\DataAccessLayer.dll
+D:\Projects\Blazor Sales Order\BusinessLogicLayer\bin\Debug\net6.0\DomainLayer.dll
+D:\Projects\Blazor Sales Order\BusinessLogicLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+D:\Projects\Blazor Sales Order\BusinessLogicLayer\bin\Debug\net6.0\DomainLayer.pdb
+D:\Projects\Blazor Sales Order\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\Projects\Blazor Sales Order\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Blazor Sales Order\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+D:\Projects\Blazor Sales Order\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.AssemblyInfo.cs
+D:\Projects\Blazor Sales Order\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Projects\Blazor Sales Order\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.csproj.CopyComplete
+D:\Projects\Blazor Sales Order\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.dll
+D:\Projects\Blazor Sales Order\BusinessLogicLayer\obj\Debug\net6.0\refint\BusinessLogicLayer.dll
+D:\Projects\Blazor Sales Order\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.pdb
+D:\Projects\Blazor Sales Order\BusinessLogicLayer\obj\Debug\net6.0\ref\BusinessLogicLayer.dll

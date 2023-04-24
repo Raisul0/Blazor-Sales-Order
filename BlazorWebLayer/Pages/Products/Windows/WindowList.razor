@@ -1,0 +1,46 @@
+﻿@page "/window"
+@inherits WindowListBase
+
+<style>
+
+    .windowItem {
+        width:23%;
+        border: 2px solid black;
+        padding: 1%;
+        margin: 0.5%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        text-align: center;
+    }
+
+
+
+</style>
+
+
+<h3>Window List</h3>
+@*<input type="checkbox" id="showAction" @bind="ShowAction" /> 
+<label for="showAction">Show Action</label>*@
+
+@if (Windows == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="card-deck">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="@($"editWindow/")" class="btn btn-danger m-1 right">Create Window</a>
+            </div>
+        </div>
+        <div class="row">
+            @foreach (var window in Windows)
+            {   
+                <div class="windowItem">
+                    <DisplayWindow Window="window" ShowAction="ShowAction" OrderAdd="false" OnWindowDeleted="WindowDeleted"></DisplayWindow>
+                </div>
+            }
+        </div>
+        
+    </div>
+}

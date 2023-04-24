@@ -1,0 +1,36 @@
+﻿@inherits DisplayElementBase
+@using BlazorWebLayer.Pages.Custom
+
+<style>
+    .data{
+        text-align: center;
+    }
+</style>
+
+<div>
+    @if(WindowAdd)
+    {
+        <div class="row">
+            <input class="col-md-3" type="checkbox" checked="@Element.IsChecked" @onchange="CheckBoxChanged" />
+            Element Count : <input class="col-md-3" type="number" value="@Element.ElementCount" @onchange="SubElementCountChanged"/>
+        </div>
+    }
+    <div class="row">
+        <span>@Element.ElementTypeName</span>
+        <span>Width : @Element.Width  Height : @Element.Height</span>
+    </div>
+    @if (ShowAction)
+    {
+        <div class="row">
+            <div class="col-md-12">
+                <a href="@($"editElement/{Element.ElementId}")" class="btn btn-primary m-1">Edit</a>
+                <a class="btn btn-danger m-1" @onclick="Delete_Click">Delete</a>
+            </div>
+        </div>
+        
+    }
+</div>
+
+<Confirm @ref="DeleteConfirmation" ConfirmationChanged="ConfirmDelete_Click"
+         ConfirmationMessage=@($"Are you sure you want to delete This Element ?")>
+</Confirm>

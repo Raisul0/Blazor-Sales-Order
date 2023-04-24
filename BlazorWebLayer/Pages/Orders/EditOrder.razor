@@ -1,0 +1,73 @@
+﻿@page "/editOrder/{OrderId}"
+@page "/editOrder"
+
+@inherits EditOrderBase
+@using BlazorWebLayer.Pages.Custom
+@using BlazorWebLayer.Pages.Products.Windows
+
+<style>
+    .windowItem {
+        width:23%;
+        border: 1px solid black;
+        padding: 1%;
+        margin:0.5%;
+        margin-bottom: 1%;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+        text-align: center;
+    }
+</style>
+
+<EditForm Model="@Order" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <h3>@PageHeader</h3>
+    <hr />
+    <div class="form-group row">
+        <label for="OrderName" class="col-sm-2 col-form-label">
+            Order Name
+        </label>
+        <div class="col-sm-10">
+            <InputText id="OrderName" class="form-control" placeholder="Name"
+                       @bind-Value="Order.OrderName" />
+            <ValidationMessage For="@(()=>Order.OrderName)"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="StateId" class="col-sm-2 col-form-label">
+            State
+        </label>
+        <div class="col-sm-10">
+            <InputSelect id="StateId" @bind-Value="Order.StateId" class="form-control">
+                @foreach (var state in States)
+                {
+                    <option value="@state.StateId">@state.StateName</option>
+                }
+            </InputSelect>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-2">Windows</div>
+        <div class="col-sm-9 form-control ">
+            <div class="row">
+                @foreach (var window in Windows)
+                {   <div class="windowItem">
+                        <DisplayWindow Window="window" ShowAction="false" OrderAdd="true" OnQuantityChanged="@((args)=> WindowQuantityChange(args.Item1,args.Item2,args.Item3))" OnWindowSelected="@((args)=> WindowSelectionChanged(args.Item1,args.Item2))"></DisplayWindow>  
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Save</button>
+    @if (Order.OrderId > 0)
+    {
+        <button class="btn btn-danger" type="button" @onclick="Delete_Click">
+            Delete
+        </button>
+    }
+
+</EditForm>
+
+<Confirm @ref="DeleteConfirmation" ConfirmationChanged="ConfirmDelete_Click"
+         ConfirmationMessage=@($"Are you sure you want to delete This Order ?")>
+</Confirm>
+

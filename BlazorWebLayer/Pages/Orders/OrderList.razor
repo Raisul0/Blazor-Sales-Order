@@ -1,0 +1,40 @@
+﻿@page "/order"
+@inherits OrderListBase
+
+<style>
+        .orderItem {
+            width:23%;
+            border: 2px solid black;
+            padding: 1%;
+            margin: 0.5%;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            text-align: center;
+        }
+</style>
+
+<h3>Orders</h3>
+@*<input type="checkbox" id="showAction" @bind="ShowAction" /> 
+<label for="showAction">Show Action</label>*@
+
+@if (Orders == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="card-deck">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="@($"editOrder/")" class="btn btn-danger m-1 right">Create Order</a>
+            </div>
+        </div>
+        <div class="row">
+            @foreach (var order in Orders)
+            {   <div class="orderItem">
+                    <DisplayOrder Order="order" ShowAction="ShowAction" OnOrderDeleted="OrderDeleted"></DisplayOrder>
+                </div>
+            }
+        </div>
+    </div>
+}
+

@@ -1,0 +1,40 @@
+﻿@page "/element"
+@inherits ElementListBase
+<style>
+
+    .elementItem {
+        width:23%;
+        border: 2px solid black;
+        padding: 1%;
+        margin: 0.5%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        text-align: center;
+    }
+
+</style>
+
+<h3>Element List</h3>
+@*<input type="checkbox" id="showAction" @bind="ShowAction" /> 
+<label for="showAction">Show Action</label>*@
+
+@if (Elements == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="card-deck">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="@($"editElement/")" class="btn btn-danger m-1 right">Create Element</a>
+            </div>
+        </div>
+        <div class="row">
+            @foreach (var element in Elements)
+            {   <div class="elementItem">
+                    <DisplayElement Element="element" ShowAction="ShowAction" WindowAdd="false" OnElementDeleted="ElementDeleted"></DisplayElement>
+                </div>
+            }
+        </div>
+    </div>
+}

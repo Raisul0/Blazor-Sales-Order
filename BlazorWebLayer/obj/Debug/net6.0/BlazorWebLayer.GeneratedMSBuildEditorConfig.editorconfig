@@ -1,0 +1,88 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BlazorWebLayer
+build_property.RootNamespace = BlazorWebLayer
+build_property.ProjectDir = D:\Projects\Blazor Sales Order\BlazorWebLayer\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Projects\Blazor Sales Order\BlazorWebLayer
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Projects/Blazor Sales Order/BlazorWebLayer/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Blazor Sales Order/BlazorWebLayer/Pages/Custom/Confirm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tXENvbmZpcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Blazor Sales Order/BlazorWebLayer/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Blazor Sales Order/BlazorWebLayer/Pages/Orders/DisplayOrder.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXERpc3BsYXlPcmRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Blazor Sales Order/BlazorWebLayer/Pages/Orders/EditOrder.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXEVkaXRPcmRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Blazor Sales Order/BlazorWebLayer/Pages/Orders/OrderList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXE9yZGVyTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Blazor Sales Order/BlazorWebLayer/Pages/Products/Elements/DisplayElement.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcRWxlbWVudHNcRGlzcGxheUVsZW1lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Blazor Sales Order/BlazorWebLayer/Pages/Products/Elements/EidtElement.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcRWxlbWVudHNcRWlkdEVsZW1lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Blazor Sales Order/BlazorWebLayer/Pages/Products/Elements/ElementList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcRWxlbWVudHNcRWxlbWVudExpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Blazor Sales Order/BlazorWebLayer/Pages/Products/Windows/DisplayWindow.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcV2luZG93c1xEaXNwbGF5V2luZG93LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Blazor Sales Order/BlazorWebLayer/Pages/Products/Windows/EidtWindow.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcV2luZG93c1xFaWR0V2luZG93LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Blazor Sales Order/BlazorWebLayer/Pages/Products/Windows/WindowList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcV2luZG93c1xXaW5kb3dMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Blazor Sales Order/BlazorWebLayer/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Blazor Sales Order/BlazorWebLayer/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-by7x23y9rk
+
+[D:/Projects/Blazor Sales Order/BlazorWebLayer/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-k4txer5z6a
+
+[D:/Projects/Blazor Sales Order/BlazorWebLayer/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Blazor Sales Order/BlazorWebLayer/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Blazor Sales Order/BlazorWebLayer/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
